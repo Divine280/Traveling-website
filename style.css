@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 20px; }
+.navbar { display: flex; justify-content: space-between; background: #2E7D32; padding: 10px 20px; color: white; }
+.nav-links a { color: white; margin: 0 10px; text-decoration: none; }
+.hero { background: url('images/rwanda-hero.jpg') center/cover no-repeat; height: 80vh; position: relative; }
+.overlay { background: rgba(0,0,0,0.6); height: 100%; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.booking-tabs button { margin: 10px; padding: 10px 20px; background: #FBC02D; border: none; cursor: pointer; }
+.booking-form input, .booking-form button, form input, form select, form button { display: block; margin: 10px auto; padding: 10px; width: 80%; max-width: 300px; }
+.card { background: white; padding: 15px; margin: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); cursor: pointer; }
+.seats button { margin: 5px; padding: 10px; }

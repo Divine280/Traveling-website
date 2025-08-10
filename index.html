@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RwandaExplorer - Book Buses & Hotels</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">RwandaExplorer</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="bus-list.html">Bus</a>
+      <a href="hotel-list.html">Hotels</a>
+      <a href="#" onclick="openLogin()">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="overlay">
+      <h1>Discover Rwanda with Us</h1>
+      <div class="booking-tabs">
+        <button onclick="switchTab('bus')">Bus Booking</button>
+        <button onclick="switchTab('hotel')">Hotel Booking</button>
+      </div>
+      <div class="booking-form">
+        <form action="bus-list.html" id="bus-form">
+          <input type="text" placeholder="Pickup Location" required />
+          <input type="text" placeholder="Dropoff Location" required />
+          <input type="date" required />
+          <button type="submit">Search Buses</button>
+        </form>
+
+        <form action="hotel-list.html" id="hotel-form" style="display: none;">
+          <input type="text" placeholder="Destination" required />
+          <input type="date" placeholder="Check-in" required />
+          <input type="date" placeholder="Check-out" required />
+          <button type="submit">Search Hotels</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
